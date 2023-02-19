@@ -20,4 +20,8 @@ abstract class ImplicitAnimationsViewModel extends State<ImplicitAnimations> {
     final random2 = (math.Random().nextDouble() - 0.5);
     alignment = Alignment(random1, random2);
   }
+
+  void setIndex() {
+    index = (index + 1) % colors.length;
+  }
 }

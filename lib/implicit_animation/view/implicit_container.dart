@@ -1,6 +1,5 @@
 import 'package:animations/implicit_animation/viewmodel/implicit_container_viewmodel.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 class ImplicitAnimations extends StatefulWidget {
   const ImplicitAnimations({super.key});
@@ -35,7 +34,7 @@ class _ImplicitAnimationsState extends ImplicitAnimationsViewModel {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        index = (index + 1) % colors.length;
+                        setIndex();
                       });
                     },
                     child: Padding(
@@ -75,7 +74,7 @@ class _ImplicitAnimationsState extends ImplicitAnimationsViewModel {
                     child: InkWell(
                       onTap: () {
                         setState(() {
-                          index = (index + 1) % colors.length;
+                          setIndex();
                         });
                       },
                       child: Center(
@@ -96,7 +95,7 @@ class _ImplicitAnimationsState extends ImplicitAnimationsViewModel {
                     child: InkWell(
                       onTap: () {
                         setState(() {
-                          index = (index + 1) % colors.length;
+                          setIndex();
                         });
                       },
                       child: Padding(

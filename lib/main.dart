@@ -1,4 +1,4 @@
-import 'package:animations/implicit_animation/view/implicit_container.dart';
+import 'package:animations/tween/view/tween_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ImplicitAnimations(),
+      home: const TweensView(),
     );
   }
 }
