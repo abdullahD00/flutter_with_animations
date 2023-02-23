@@ -84,7 +84,7 @@ class CurvePainter extends CustomPainter {
     canvas.drawPath(
       path,
       Paint()
-        ..color = Colors.black45
+        ..color = Colors.white12
         ..style = PaintingStyle.stroke
         ..strokeWidth = 2,
     );
